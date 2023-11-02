@@ -7,7 +7,7 @@
 .gallery img{
 	transition: 1s;
 	padding: 15px;
-	width: 200px;
+	width: 300px;
 }
 
 .gallery img:hover {
