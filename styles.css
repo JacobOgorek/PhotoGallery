@@ -1,13 +1,13 @@
 /* Basic styles for the gallery layout */
 .gallery {
-    margin: 10px 50px;
+    margin: 50px 50px;
 	display: flex;
 }
 
 .gallery img{
 	transition: 1s;
 	padding: 15px;
-	width: 200px;
+	width: 300px;
 }
 
 .gallery img:hover {
