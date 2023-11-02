@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+	<script src="lightbox-plus-jquery.min.js"></script>
     <title>Photo Gallery</title>
 </head>
 <body>
     <div class="gallery">
-        <div class="thumbnails">
             <!-- Thumbnails here -->
-        </div>
-        <div class="lightbox">
-            <span class="close">&times;</span>
-            <img class="lightbox-content" id="fullImage">
-            <div id="caption"></div>
-        </div>
+			<a href="images/Charlie.png" data-lightbox="mygallery" data-title="Charlie- 2007 Corvette" ><img src="images/Charlie-small.png"></a>
+			<a href="images/AudreyMae.png" data-lightbox="mygallery" data-title="Audrey Mae- German Shepherd Dog x Belgian Malinois" ><img src="images/AudreyMae-small.png"></a>
+        
     </div>
-
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" required>
-        <input type="text" name="caption" placeholder="Caption" required>
-        <input type="submit" value="Upload">
-    </form>
-
-    <script src="script.js"></script>
 </body>
 </html>
