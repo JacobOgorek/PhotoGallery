@@ -10,7 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         backToTopBtn.addEventListener("click", function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            // Scroll to the top smoothly
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     });
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+
