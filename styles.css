@@ -1,4 +1,18 @@
 /* Basic styles for the gallery layout */
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .image-container {
+        width: calc(50% - 10px);
+    }
+}
+
+
 .gallery {
     margin: 50px 50px;
 	display: flex;
@@ -47,6 +61,7 @@
 .gallery a {
 	max-width: 200px;
 }
+
 
 nav ul {
 	list-style: none;
@@ -133,4 +148,26 @@ nav {
 
 .nav-active {
     display: block;
+}
+
+body {
+    position: relative;
+}
+
+#back-to-top-btn {
+	align-content: center;
+	position: absolute;
+    bottom: 80px;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    background-color: #535151;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#back-to-top-btn:hover {
+    background-color: #333;
 }
